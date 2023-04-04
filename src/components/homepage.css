@@ -1,0 +1,117 @@
+/* .navcontainer {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+} */
+
+.navcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(239, 232, 232);
+}
+
+.nameCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1em;
+}
+
+.icon {
+    font-size: 36px;
+    background-color: grey;
+    border-radius: 50px;
+    padding: 10px;
+    color: white;
+}
+
+.boldHead {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.searchCont {
+    margin-left: 8em;
+}
+
+.searchCont>input {
+    height: 32px;
+    width: 26vw;
+    border-radius: 8px;
+    border: 1px solid grey;
+}
+
+.buttonCont {
+    display: flex;
+    margin-left: auto;
+    margin-right: 5em;
+}
+
+.buttonCont>button {
+    background-color: green;
+    height: 36px;
+    width: 120px;
+    border: 1px solid lightgrey;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+/* .imgcontainer{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 30vw 30vw 30vw;
+    column-gap: 1em;
+    row-gap: 1em;
+} */
+img {
+    width: 30vw;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+/* img:hover{
+    opacity: 0.5;
+} */
+.cardcont {
+    width: 52vw;
+    height: 40vh;
+    position: fixed;
+    top: 20%;
+    left: 30%;
+    background-color: white;
+    border: 0px solid lightgrey;
+    padding: 10px;
+    padding-left: 40px;
+    border-radius: 10px;
+}
+.imgcontainer{
+    animation-duration: 5s;
+    animation-name: slidedown;
+
+}
+@keyframes slidedown {
+    from {
+        margin-top: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-top: 0%;
+        width: 100%;
+    }
+}
