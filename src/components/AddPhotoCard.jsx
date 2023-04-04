@@ -12,7 +12,7 @@ const AddPhotoCard = () =>{
     }
     const handlepost = (e) =>{
         e.preventDefault()
-        axios('http://localhost:5000/api/v1/gallery/',{
+        axios('https://galleryappserverakhil.onrender.com/api/v1/gallery/',{
             method:"post",
             data: postData
 

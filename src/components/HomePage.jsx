@@ -16,7 +16,7 @@ const HomePage = () => {
         fetchGallery()
     }, [])
     const fetchGallery = () => {
-        axios.get("http://localhost:5000/api/v1/gallery/")
+        axios.get("https://galleryappserverakhil.onrender.com/api/v1/gallery/")
             .then((res) => {
                 // console.log(res.data.gallerydata)
                 const result = res.data.gallerydata
@@ -29,7 +29,7 @@ const HomePage = () => {
     }
     console.log(data)
     const handleDelete = (val) =>{
-        axios(`http://localhost:5000/api/v1/gallery/${val._id}`, {
+        axios(`https://galleryappserverakhil.onrender.com/api/v1/gallery/${val._id}`, {
                 method: "delete"
             }).then((result) => {
                 console.log(result.data.data)
@@ -53,7 +53,7 @@ const HomePage = () => {
             fetchGallery()
         }
         else {
-            axios(`http://localhost:5000/api/v1/gallery/${val}`, {
+            axios(`https://galleryappserverakhil.onrender.com/api/v1/gallery/${val}`, {
                 method: "get"
             }).then((result) => {
                 console.log(result.data.data)
